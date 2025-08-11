@@ -3,6 +3,7 @@
     --primary-color: hsl(212, 45%, 89%);
     --card-bg-color: white;
     --text-color: hsl(216, 15%, 48%);
+    --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -30,10 +31,10 @@ main {
 .card {
     background-color: var(--card-bg-color);
     border-radius: .675rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--card-shadow);
     text-align: center;
     padding: 1rem;
-    width: 18.75rem;
+    width: 20rem;
 }
 
 .card img {
@@ -42,13 +43,14 @@ main {
 }
 
 .card h1 {
-    font-size: 1.125rem;
-    margin: 1.25rem  0.78125rem 0.625rem;
+    font-size: 1rem;
+    margin: 1.25rem  0.78125rem 0.875rem;
 }
 
 .card p {
     color: var(--text-color);
     font-size: 0.9375rem;
+    line-height: 1.5;
     margin: 0 0 1.25rem;
     padding: 0 0.78125rem;
 }
