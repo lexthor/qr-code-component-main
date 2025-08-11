@@ -1,3 +1,11 @@
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --primary-color: hsl(212, 45%, 89%);
+    --card-bg-color: white;
+    --text-color: hsl(216, 15%, 48%);
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +16,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-family);
 }
 
 main {
@@ -16,31 +24,31 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(212, 45%, 89%);
+    background-color: var(--primary-color);
 }
 
 .card {
-    background-color: white;
-    border-radius: 10px;
+    background-color: var(--card-bg-color);
+    border-radius: .675rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 15px;
-    width: 300px;
+    padding: 1rem;
+    width: 18.75rem;
 }
 
 .card img {
     max-width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: .675rem;
 }
 
 .card h1 {
-    font-size: 18px;
-    margin: 20px  12.5px 10px;
+    font-size: 1.125rem;
+    margin: 1.25rem  0.78125rem 0.625rem;
 }
 
 .card p {
-    color: hsl(216, 15%, 48%);
-    font-size: 15px;
-    margin-bottom: 20px;
-    padding: 0 12.5px;
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    margin: 0 0 1.25rem;
+    padding: 0 0.78125rem;
 }
